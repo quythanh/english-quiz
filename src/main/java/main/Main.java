@@ -10,5 +10,8 @@ public class Main {
         System.out.println("1. Quản lý người học");
         System.out.println("2. Quản lý câu hỏi");
         System.out.println("3. Luyện tập");
+        System.out.println("4. Thoát");
+        System.out.println("4. Thoát");
+        System.out.println("4. Thoát");
     }
 }
