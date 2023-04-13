@@ -1,6 +1,7 @@
 package main;
 
 import java.util.List;
+import java.util.Scanner;
 
 public class Incomplete extends CauHoi {
 
@@ -10,4 +11,17 @@ public class Incomplete extends CauHoi {
 
 	}
 
+	@Override
+	public void hienThi() {
+		// TODO Auto-generated method stub
+		throw new UnsupportedOperationException("Unimplemented method 'hienThi'");
+	}
+
+	@Override
+	public PhuongAn thucHien() {
+        return null;
+	}
+
+    @Override
+    public void docFile(Scanner sc) {}
 }

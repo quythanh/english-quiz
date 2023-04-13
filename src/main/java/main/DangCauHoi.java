@@ -5,7 +5,18 @@ import java.util.HashMap;
 import java.util.Map;
 
 public enum DangCauHoi {
-	MULTIPLE_CHOICE(1, "Multiple choice"),
+	MULTIPLE_CHOICE(1, "Multiple choice") {
+        @Override
+        public int getSoLuong() {
+            System.out.println("Nhâp số lượng câu: ");
+            return Integer.parseInt(Config.sc.nextLine());
+        }
+
+        @Override
+        public MucDo getMucDo() {
+            return MucDo.valueOf((int)(Math.random() * MucDo.values().length));
+        }
+    },
 	INCOMPLETE(2, "Incomplete"),
 	CONVERSATION(3, "Conversation");
 
@@ -30,4 +41,15 @@ public enum DangCauHoi {
 	public static DangCauHoi valueOf(int id) {
 		return map.get(id);
 	}
+
+    public int getSoLuong() {
+        return 1;
+    }
+
+    public MucDo getMucDo() {
+        Arrays.asList(DangCauHoi.values()).forEach(dch -> System.out.println(dch));
+        System.out.println("Chọn mức độ câu hỏi:\t");
+        int choice = Integer.parseInt(Config.sc.nextLine());
+        return MucDo.valueOf(choice);
+    }
 }
