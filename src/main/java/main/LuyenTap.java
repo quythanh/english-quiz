@@ -20,12 +20,10 @@ public class LuyenTap {
         List<CauHoi> danhSach = new ArrayList<>();
         List<LuyenTap> danhSachLuyenTap = nguoiDung.getBaiLuyenTap();
 
-        for (CauHoi cauHoi : QuanLyCauHoi.getDanhSach(dangCauHoi)) {
-            for (LuyenTap luyenTap : danhSachLuyenTap) {
+        for (CauHoi cauHoi : QuanLyCauHoi.getDanhSach(dangCauHoi))
+            for (LuyenTap luyenTap : danhSachLuyenTap)
                 if (!luyenTap.getCauHoi().contains(cauHoi) && cauHoi.getMucDo() == dangCauHoi.getMucDo())
                     danhSach.add(cauHoi);
-            }
-        }
 
         for (int i = 0; i < dangCauHoi.getSoLuong(); i++) {
             CauHoi q = danhSach.get(i);

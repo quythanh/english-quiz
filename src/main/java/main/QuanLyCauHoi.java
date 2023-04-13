@@ -16,6 +16,7 @@ public class QuanLyCauHoi {
 				cauHoi.docFile(sc);
 				danhSach.add(cauHoi);
 			}
+            sc.close();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -1,7 +1,9 @@
 package main;
 
+import java.io.FileNotFoundException;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,28 +20,10 @@ public class Main {
     }
 
     public static void test() {
-       //PhuongAn A = new PhuongAn("It's an apple", "just an apple");
-       //PhuongAn B = new PhuongAn("It's an pineapple", "just an apple");
-       //PhuongAn C = new PhuongAn("It's an banana", "just an apple");
-       //PhuongAn D = new PhuongAn("It's an burger", "just an apple");
-       //List<PhuongAn> Ans = new ArrayList<>();
-       //Ans.add(A);
-       //Ans.add(B);
-       //Ans.add(C);
-       //Ans.add(D);
-       //CauHoi C1 = new MultipleChoice("what is it?", Ans, A);
-       //PhuongAn a = C1.thucHien();
-       //String kq = "Sai";
-       //if (a == C1.getPhuongAnDung())
-       //    kq = "Đúng";
-       //C1.hienThi();
         List<CauHoi> l = QuanLyCauHoi.getDanhSach(DangCauHoi.MULTIPLE_CHOICE);
-        l.forEach(q -> {
-            PhuongAn a = q.thucHien();
-            String kq = "Sai";
-            if (a == q.getPhuongAnDung())
-                kq = "Đúng";
-            q.hienThi();
-        });
+        List<PhuongAn> a = new ArrayList<>();
+        l.forEach(q -> a.add(q.thucHien().get(0)));
+        for (int i = 0; i < l.size(); i++)
+            l.get(i).hienKetQua(a.get(i));
     }
 }

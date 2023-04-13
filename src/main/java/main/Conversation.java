@@ -18,7 +18,7 @@ public class Conversation extends CauHoi {
 	}
 
 	@Override
-	public PhuongAn thucHien() {
+	public void thucHien(List<PhuongAn> cauTraLoi) {
 		return null;
 	}
 
@@ -27,4 +27,7 @@ public class Conversation extends CauHoi {
 		// TODO Auto-generated method stub
 		throw new UnsupportedOperationException("Unimplemented method 'docFile'");
 	}
+
+    @Override
+    public void hienKetQua(PhuongAn... ans) {}
 }

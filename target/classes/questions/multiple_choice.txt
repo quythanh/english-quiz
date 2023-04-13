@@ -6,7 +6,7 @@ Bananas#Human can only eat bananas.
 m0002,TRUNG_BINH,MULTIPLE_CHOICE,TINH_TU
 Choose the correct form of the adjective to complete the sentence: "The _____ flowers are beautiful."
 red#redder#reddest#None of the above
-Reddest#The correct form of the adjective is "reddest".
+red#The correct form of the adjective is "red".
 ==========
 m0003,TRUNG_BINH,MULTIPLE_CHOICE,TRANG_TU
 Identify the adverb in the following sentence: "She sings beautifully."

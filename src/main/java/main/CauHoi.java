@@ -1,5 +1,6 @@
 package main;
 
+import java.util.List;
 import java.util.Scanner;
 
 public abstract class CauHoi {
@@ -42,6 +43,7 @@ public abstract class CauHoi {
     public PhuongAn getPhuongAnDung() { return null; }
 
 	public abstract void hienThi();
-	public abstract PhuongAn thucHien();
+	public abstract void thucHien(List<PhuongAn> cauTraLoi);
     public abstract void docFile(Scanner sc);
+    public abstract void hienKetQua(PhuongAn... ans);
 }

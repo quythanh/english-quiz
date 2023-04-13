@@ -7,21 +7,21 @@ public class Incomplete extends CauHoi {
 
 	private List<MultipleChoice> cauHoi;
 
-	public Incomplete() {
-
-	}
+	public Incomplete() {}
 
 	@Override
 	public void hienThi() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Unimplemented method 'hienThi'");
+        System.out.println(this.getNoiDung());
 	}
 
 	@Override
-	public PhuongAn thucHien() {
+	public void thucHien(List<PhuongAn> cauTraLoi) {
         return null;
 	}
 
     @Override
     public void docFile(Scanner sc) {}
+
+    @Override
+    public void hienKetQua(PhuongAn... ans) {}
 }
