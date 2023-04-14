@@ -3,6 +3,7 @@ package main;
 import java.util.List;
 import java.util.Objects;
 import java.util.Scanner;
+import java.util.Queue;
 
 public abstract class CauHoi {
 	private String id;
@@ -51,7 +52,7 @@ public abstract class CauHoi {
     public PhuongAn getPhuongAnDung() { return null; }
 
     public abstract void hienThi();
-    public abstract void thucHien(List<PhuongAn> cauTraLoi);
+    public abstract void thucHien(Queue<PhuongAn> cauTraLoi);
     public abstract void docFile(Scanner sc);
-    public abstract void hienKetQua(PhuongAn... ans);
+    public abstract void hienKetQua(Queue<PhuongAn> ans);
 }

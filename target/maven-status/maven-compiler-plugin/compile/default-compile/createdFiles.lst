@@ -1,5 +1,15 @@
 main/MucDo.class
 main/DangCauHoi.class
-main/CauHoi.class
 main/DangCauHoi$1.class
+main/QuanLyCauHoi.class
+main/Incomplete.class
+main/DanhMuc.class
+main/Config.class
+main/Main.class
+main/PhuongAn.class
+main/CauHoi.class
+main/LuyenTap.class
 main/Conversation.class
+main/NguoiDung.class
+main/QuanLyNguoiDung.class
+main/MultipleChoice.class

@@ -5,6 +5,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.stream.Collectors;
+import java.util.Queue;
 
 public class MultipleChoice extends CauHoi {
 	private List<PhuongAn> phuongAn;
@@ -33,7 +34,7 @@ public class MultipleChoice extends CauHoi {
     }
 
     @Override
-    public void thucHien(List<PhuongAn> cauTraLoi) {
+    public void thucHien(Queue<PhuongAn> cauTraLoi) {
         int index;
         this.hienThi();
         do {
@@ -41,7 +42,7 @@ public class MultipleChoice extends CauHoi {
             char ans = Config.sc.next().charAt(0);
             index = (int)ans - 65;
             if(index < 0 || index >= this.getPhuongAn().size())
-                System.out.println("Loi! vui long nhap lai (A,B,C,D,E...)");
+                System.out.println("Loi! vui long nhap lai (A,B,C,D,...)");
         } while(index < 0 || index >= this.getPhuongAn().size());
         cauTraLoi.add(this.getPhuongAn().get(index));
     }
@@ -68,9 +69,9 @@ public class MultipleChoice extends CauHoi {
     }
 
     @Override
-    public void hienKetQua(PhuongAn... ans) {
+    public void hienKetQua(Queue<PhuongAn> ans) {
         this.hienThi();
-        PhuongAn traLoi = ans[0];
+        PhuongAn traLoi = ans.poll();
         System.out.printf("Đáp án của bạn: %s\t\t|| %s ||\nGiải thích: %s\n\n",
             traLoi.getNoiDung(),
             traLoi == this.getPhuongAnDung() ? "Đúng" : "Sai",
@@ -78,24 +79,7 @@ public class MultipleChoice extends CauHoi {
         );
     }
 
-    /**
-     * @return the phuongAn
-     */
-    public List<PhuongAn> getPhuongAn() {
-        return phuongAn;
-    }
-
-    /**
-     * @param phuongAn the phuongAn to set
-     */
-    public void setPhuongAn(List<PhuongAn> phuongAn) {
-        this.phuongAn = phuongAn;
-    }
-
-    /**
-     * @param phuongAnDung the phuongAnDung to set
-     */
-    public void setPhuongAnDung(PhuongAn phuongAnDung) {
-        this.phuongAnDung = phuongAnDung;
-    }
+    public List<PhuongAn> getPhuongAn() { return phuongAn; }
+    public void setPhuongAn(List<PhuongAn> phuongAn) { this.phuongAn = phuongAn; }
+    public void setPhuongAnDung(PhuongAn phuongAnDung) { this.phuongAnDung = phuongAnDung; }
 }

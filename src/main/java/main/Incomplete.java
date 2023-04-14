@@ -2,6 +2,7 @@ package main;
 
 import java.util.List;
 import java.util.Scanner;
+import java.util.Queue;
 
 public class Incomplete extends CauHoi {
 
@@ -15,12 +16,12 @@ public class Incomplete extends CauHoi {
 	}
 
 	@Override
-	public void thucHien(List<PhuongAn> cauTraLoi) {
+	public void thucHien(Queue<PhuongAn> cauTraLoi) {
 	}
 
     @Override
     public void docFile(Scanner sc) {}
 
     @Override
-    public void hienKetQua(PhuongAn... ans) {}
+    public void hienKetQua(Queue<PhuongAn> ans) {}
 }
