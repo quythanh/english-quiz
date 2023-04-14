@@ -22,9 +22,7 @@ public class Main {
     }
 
     public static void test() {
-        Queue<PhuongAn> a = new LinkedList<>();
-        List<CauHoi> l = QuanLyCauHoi.getDanhSach(DangCauHoi.CONVERSATION);
-        l.forEach(q -> q.thucHien(a));
-        l.forEach(q -> q.hienKetQua(a));
+        NguoiDung a = new NguoiDung();
+        a.lamBaiLuyenTap();
     }
 }

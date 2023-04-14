@@ -1,0 +1,26 @@
+i001,TRUNG_BINH,INCOMPLETE,DOAN_VAN
+Agriculture is one of the world's oldest and most important industries.
+It provides food and other products that are essential to human survival.
+However, agriculture can also have negative environmental impacts.
+For example, the use of _____ can contaminate soil and water, and contribute to the decline of ecosystems.
+To address these issues, many farmers and agricultural researchers are exploring alternative methods of farming, such as _____ and _____.
+#
+
+i001m01,TRUNG_BINH,MULTIPLE_CHOICE,DANH_TU
+Blank 1:
+pesticides#fertilizers#herbicides#fungicides
+pesticides#The use of pesticides in agriculture has been linked to negative environmental impacts such as soil and water contamination, and harm to ecosystems. Therefore, farmers and agricultural researchers are exploring alternative methods of farming that reduce or eliminate the use of pesticides.
+==========
+
+i001m02,TRUNG_BINH,MULTIPLE_CHOICE,DANH_TU
+Blank 2:
+organic farming#hydroponics#monoculture#biotechnology
+organic farming#Organic farming is a farming method that relies on natural fertilizers and pest control methods, rather than synthetic chemicals such as pesticides and fertilizers. It is considered an alternative to conventional farming methods that rely heavily on the use of synthetic chemicals.
+==========
+
+i001m03,TRUNG_BINH,MULTIPLE_CHOICE,DANH_TU
+Blank 3:
+permaculture#agroforestry#aquaculture#precision farming
+agroforestry#Agroforestry is a land use management system in which trees or shrubs are grown around or among crops or pastureland. It can provide a variety of environmental benefits, such as soil conservation, carbon sequestration, and biodiversity conservation.
+==========
+##########

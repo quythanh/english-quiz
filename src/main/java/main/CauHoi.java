@@ -54,5 +54,5 @@ public abstract class CauHoi {
     public abstract void hienThi();
     public abstract void thucHien(Queue<PhuongAn> cauTraLoi);
     public abstract void docFile(Scanner sc);
-    public abstract void hienKetQua(Queue<PhuongAn> ans);
+    public abstract int getKetQua(Queue<PhuongAn> ans);
 }

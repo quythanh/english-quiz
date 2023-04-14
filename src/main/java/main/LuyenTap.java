@@ -13,28 +13,34 @@ public class LuyenTap {
     private NguoiDung nguoiDung;
     private double diem;
     private Calendar ngayLam;
-    private List<CauHoi> cauHoi;
+    private List<CauHoi> cauHoi = new ArrayList<>();
 
     public LuyenTap(DangCauHoi dangCauHoi, NguoiDung nguoiDung) {
         this.dangCauHoi = dangCauHoi;
         this.nguoiDung = nguoiDung;
         this.ngayLam = new GregorianCalendar();
-
-        List<CauHoi> danhSach = new ArrayList<>();
-        List<LuyenTap> danhSachLuyenTap = nguoiDung.getBaiLuyenTap();
+        
+        List<CauHoi> danhSach = QuanLyCauHoi.getDanhSach(dangCauHoi);
+        //List<LuyenTap> danhSachLuyenTap = nguoiDung.getBaiLuyenTap();
         Queue<PhuongAn> cauTraLoi = new LinkedList<>();
 
-        for (CauHoi cauHoi : QuanLyCauHoi.getDanhSach(dangCauHoi))
-            for (LuyenTap luyenTap : danhSachLuyenTap)
-                if (!luyenTap.getCauHoi().contains(cauHoi) && cauHoi.getMucDo() == dangCauHoi.getMucDo())
-                    danhSach.add(cauHoi);
+        //for (CauHoi quest : )
+            //for (LuyenTap luyenTap : danhSachLuyenTap)
+                //if (!luyenTap.getCauHoi().contains(cauHoi) && cauHoi.getMucDo() == dangCauHoi.getMucDo())
+         //           danhSach.add(quest);
 
-        for (int i = 0; i < dangCauHoi.getSoLuong(); i++) {
+        int s = dangCauHoi.getSoLuong();
+
+        for (int i = 0; i < s; i++) {
             CauHoi q = danhSach.get(i);
             cauHoi.add(q);
             q.thucHien(cauTraLoi);
         }
-        cauHoi.forEach(x -> x.hienKetQua(cauTraLoi));
+        int soCauDung = 0, soCauHoi = cauTraLoi.size();
+        for (int i = 0; i < this.cauHoi.size(); i++)
+            soCauDung += this.cauHoi.get(i).getKetQua(cauTraLoi);
+        this.diem = soCauDung * 10.0 / soCauHoi;
+        System.out.printf("Điểm: %.2f\n", this.diem);
     }
 
     public double getDiem() {

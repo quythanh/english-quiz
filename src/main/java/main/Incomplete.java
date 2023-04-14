@@ -23,5 +23,7 @@ public class Incomplete extends CauHoi {
     public void docFile(Scanner sc) {}
 
     @Override
-    public void hienKetQua(Queue<PhuongAn> ans) {}
+    public int getKetQua(Queue<PhuongAn> ans) {
+        return 0;
+    }
 }

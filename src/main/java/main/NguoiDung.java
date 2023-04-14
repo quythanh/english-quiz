@@ -18,6 +18,10 @@ public class NguoiDung {
 	private Calendar ngayGiaNhap;
 	private List<LuyenTap> baiLuyenTap;
 
+    public NguoiDung() {
+        this.baiLuyenTap = new ArrayList<>();
+    }
+
 	public NguoiDung(String hoTen, String username, String password, String queQuan, boolean gioiTinh,
 			Calendar ngaySinh) {
 		this.id = ++dem;
@@ -27,7 +31,6 @@ public class NguoiDung {
 		this.ngaySinh = ngaySinh;
 		this.ngayGiaNhap = new GregorianCalendar();
 		this.baiLuyenTap = new ArrayList<>();
-
 	}
 
 	public String getHoTen() {
@@ -53,10 +56,10 @@ public class NguoiDung {
 	public void lamBaiLuyenTap() {
 		Arrays.asList(DangCauHoi.values()).forEach(dch -> System.out.println(dch));
 		System.out.println("Chọn dạng câu hỏi:\t");
-		// int choice = Integer.parseInt(Config.sc.nextLine());
-
-		// LuyenTap practice = new LuyenTap();
-
+		int choice = Integer.parseInt(Config.sc.nextLine());
+        
+        LuyenTap practice = new LuyenTap(DangCauHoi.valueOf(choice), this);
+        this.baiLuyenTap.add(practice);
 	}
 
 	public List<LuyenTap> getBaiLuyenTap() {

@@ -50,8 +50,15 @@ public class Conversation extends CauHoi {
     }
 
     @Override
-    public void hienKetQua(Queue<PhuongAn> ans) {
+    public int getKetQua(Queue<PhuongAn> ans) {
+        int diem = 0;
         System.out.println(this.getNoiDung());
-        this.cauHoi.forEach(q -> q.hienKetQua(ans));
+        for (int i = 0; i < this.cauHoi.size(); i++)
+            diem += this.cauHoi.get(i).getKetQua(ans);
+        //this.cauHoi.forEach(q -> {
+        //    int t = q.getKetQua(ans);
+        //    diem += t; 
+        //});
+        return diem;
     }
 }

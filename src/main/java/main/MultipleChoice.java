@@ -69,14 +69,16 @@ public class MultipleChoice extends CauHoi {
     }
 
     @Override
-    public void hienKetQua(Queue<PhuongAn> ans) {
+    public int getKetQua(Queue<PhuongAn> ans) {
         this.hienThi();
         PhuongAn traLoi = ans.poll();
+        boolean kq = traLoi == this.getPhuongAnDung();
         System.out.printf("Đáp án của bạn: %s\t\t|| %s ||\nGiải thích: %s\n\n",
             traLoi.getNoiDung(),
-            traLoi == this.getPhuongAnDung() ? "Đúng" : "Sai",
+            kq ? "Đúng" : "Sai",
             traLoi.getGiaiThich()
         );
+        return kq ? 1 : 0;
     }
 
     public List<PhuongAn> getPhuongAn() { return phuongAn; }

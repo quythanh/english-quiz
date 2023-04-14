@@ -17,30 +17,20 @@ public class QuanLyCauHoi {
                 danhSach.add(cauHoi);
             }
             sc.close();
-            //                Scanner sc = Config.readFile("questions/multiple_choice.txt")) {
-            //			while (sc.hasNext()) {
-            //				CauHoi cauHoi = new MultipleChoice();
-            //				cauHoi.docFile(sc);
-            //				danhSach.add(cauHoi);
-            //			}
-            //                sc.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
 
-		// sc = Config.readFile("questions/incomplete.txt");
-		// while (sc.hasNext()) {
-		// CauHoi cauHoi = new Incomplete();
-		// cauHoi.docFile(sc);
-		// danhSach.add(cauHoi);
-		// }
-		//
-		// sc = Config.readFile("questions/conversation.txt");
-		// while (sc.hasNext()) {
-		// CauHoi cauHoi = new Conversation();
-		// cauHoi.docFile(sc);
-		// danhSach.add(cauHoi);
-		// }
+        try (Scanner sc = Config.readFile("questions/multiple_choice.txt")) {
+            while (sc.hasNext()) {
+                CauHoi cauHoi = new MultipleChoice();
+                cauHoi.docFile(sc);
+                danhSach.add(cauHoi);
+            }
+            sc.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 	}
 
 	private QuanLyCauHoi() {
