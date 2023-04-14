@@ -16,7 +16,6 @@ public class Incomplete extends CauHoi {
 
 	@Override
 	public void thucHien(List<PhuongAn> cauTraLoi) {
-        return null;
 	}
 
     @Override

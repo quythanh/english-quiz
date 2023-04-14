@@ -1,0 +1,29 @@
+c001,DE,CONVERSATION,DOAN_VAN
+Fifty-five delegates representing all thirteen states except Rhode Island attended the Constitutional Convention in Philadelphia from May to September 1787. The delegates had been instructed by the Continential Congress to revise the old Articles off Confederation, but most believed that a strong central government was needed. There were differences, however, about what structure the government should take and how much influence large states should have. 
+Virginia was by far the most populous state, wtih twice as many as people as New York, four times as many as New Jersey and ten times as many as Delaware. The leader of the Virginia delegation, James Madison, had already drawn up a plan for government, which become known as the Large State Plan. It is essence was that congressional representation would be based on population. It provided for two or more national executives. The smaller states feared that under this plan, a few large states would lord over the rest. New Jersey countered with the Small State Plan. It provided for equal representation for all states in a national legistature and for a singer national executive. Angry debate, heightened by a stifling heat wave, lead to deadlock. 
+A cooling of tempers seemed to come with lower temperatures. The delegates harmmered out an agreement known as the Great Compromise - actually a bundle of shrewd compromises. They decided that Congress would consist of two houses. The larger states were granted representation based on population in the lower house, the House of Representatives. The smaller states were given equal representation in the upper house, the Senate, in which each state would have two senators regardless of population. It was also agreed that there would be a singer executive, the president. This critical compromise broke the logjam, and from then on, success seemed within reach. 
+#
+mc001,DE,MULTIPLE_CHOICE,DANH_TU
+What is the main topic of this passage?
+James Madison's plan to create a stable structure for the government of the United States.#A disagreement at the Constititional Convention and a subsequent compromise.#The differences in population and relative power between the original states.
+A disagreement at the Constititional Convention and a subsequent compromise.# "There were differences, however, about what structure the government should take and how much influence large states should have." + Đoạn 3: "The delegates harmmered out an agreement known as the Great Compromise - actually a bundle of shrewd compromises"
+==========
+
+mc002,TRUNG_BINH,MULTIPLE_CHOICE,TINH_TU
+According to the passage, how many states were represented at the Constututional Convention?
+Twelve#Thirteen#Fourteen#Fifty-five
+Twelve#Đoạn 1: "Fifty-five delegates representing all thirteen states except Rhode Island attended the Constitutional Convention in Philadelphia from May to September 1787".
+==========
+
+mc003,TRUNG_BINH,MULTIPLE_CHOICE,TRANG_TU
+The word "SHREWD" in line 27 is closest in meaning to ......
+Pratical#Unfair#Important#Clever
+Clever# "The delegates harmmered out an agreement known as the Great Compromise - actually a bundle of shrewd compromises". (Những đại biểu đã đi đến thỏa thuận được biết đến như là Cuộc thỏa hiệp lớn - thực tế là những điều kiện thỏa hiệp khôn khéo). 
+==========
+
+mc004,TRUNG_BINH,MULTIPLE_CHOICE,DONG_TU
+Which of the following is NOT GIVEN in the passage as one of the provisions of the Great Compromise?
+There would be only one national executive# The president would be elected by popular vote#Each state would have two senators#Congress would be divided into two bodies
+The president would be elected by popular vote#"The delegates harmmered out an agreement known as the Great Compromise - actually a bundle of shrewd compromises. They decided that Congress would consist of two houses. The larger states were granted representation based on population in the lower house, the House of Representatives. The smaller states were given equal representation in the upper house, the Senate, in which each state would have two senators regardless of population. It was also agreed that there would be a singer executive, the president."
+==========
+##########

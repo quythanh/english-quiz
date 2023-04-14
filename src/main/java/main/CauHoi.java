@@ -1,6 +1,7 @@
 package main;
 
 import java.util.List;
+import java.util.Objects;
 import java.util.Scanner;
 
 public abstract class CauHoi {
@@ -21,17 +22,17 @@ public abstract class CauHoi {
 		this.dangCauHoi = DangCauHoi.valueOf(dangCauHoi);
 	}
 
-	public String getId() { return this.id; }
+    public String getId() { return this.id; }
     public void setId(String id) { this.id = id; }
-	public String getNoiDung() { return this.noiDung; }
+    public String getNoiDung() { return this.noiDung; }
     public void setNoiDung(String noiDung) { this.noiDung = noiDung; }
-	public DanhMuc getDanhMuc() { return this.danhMuc; }
+    public DanhMuc getDanhMuc() { return this.danhMuc; }
     public void setDanhMuc(DanhMuc danhMuc) { this.danhMuc = danhMuc; }
     public void setDanhMuc(String danhMuc) { this.danhMuc = DanhMuc.valueOf(danhMuc); }
-	public MucDo getMucDo() { return this.mucDo; }
+    public MucDo getMucDo() { return this.mucDo; }
     public void setMucDo(MucDo mucDo) { this.mucDo = mucDo; }
     public void setMucDo(String mucDo) { this.mucDo = MucDo.valueOf(mucDo); }
-	public DangCauHoi getDangCauHoi() { return this.dangCauHoi; }
+    public DangCauHoi getDangCauHoi() { return this.dangCauHoi; }
     public void setDangCauHoi(DangCauHoi dangCauHoi) { this.dangCauHoi = dangCauHoi; }
     public void setDangCauHoi(String dangCauHoi) { this.dangCauHoi = DangCauHoi.valueOf(dangCauHoi); }
 
@@ -40,10 +41,17 @@ public abstract class CauHoi {
         return this.id == ((CauHoi) object).id;
     }
 
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 67 * hash + Objects.hashCode(this.id);
+        return hash;
+    }
+
     public PhuongAn getPhuongAnDung() { return null; }
 
-	public abstract void hienThi();
-	public abstract void thucHien(List<PhuongAn> cauTraLoi);
+    public abstract void hienThi();
+    public abstract void thucHien(List<PhuongAn> cauTraLoi);
     public abstract void docFile(Scanner sc);
     public abstract void hienKetQua(PhuongAn... ans);
 }

@@ -10,13 +10,20 @@ public class QuanLyCauHoi {
 	private static List<CauHoi> danhSach = new ArrayList<>();
 
 	static {
-		try (Scanner sc = Config.readFile("questions/multiple_choice.txt")) {
+		try (Scanner sc = Config.readFile("questions/conversation.txt")) {
 			while (sc.hasNext()) {
-				CauHoi cauHoi = new MultipleChoice();
+				CauHoi cauHoi = new Conversation();
 				cauHoi.docFile(sc);
 				danhSach.add(cauHoi);
 			}
-            sc.close();
+                sc.close();
+//                Scanner sc = Config.readFile("questions/multiple_choice.txt")) {
+//			while (sc.hasNext()) {
+//				CauHoi cauHoi = new MultipleChoice();
+//				cauHoi.docFile(sc);
+//				danhSach.add(cauHoi);
+//			}
+//                sc.close();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

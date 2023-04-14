@@ -1,6 +1,7 @@
 package main;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.List;
@@ -19,6 +20,7 @@ public class LuyenTap {
 
         List<CauHoi> danhSach = new ArrayList<>();
         List<LuyenTap> danhSachLuyenTap = nguoiDung.getBaiLuyenTap();
+        PhuongAn[] cauTraLoi;
 
         for (CauHoi cauHoi : QuanLyCauHoi.getDanhSach(dangCauHoi))
             for (LuyenTap luyenTap : danhSachLuyenTap)
@@ -27,9 +29,10 @@ public class LuyenTap {
 
         for (int i = 0; i < dangCauHoi.getSoLuong(); i++) {
             CauHoi q = danhSach.get(i);
-            q.thucHien();
             cauHoi.add(q);
+            q.thucHien(cauTraLoi);
         }
+        cauHoi.forEach(x -> x.hienKetQua(CauTraLoi);
     }
 
     public double getDiem() {

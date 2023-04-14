@@ -20,10 +20,22 @@ public class Main {
     }
 
     public static void test() {
-        List<CauHoi> l = QuanLyCauHoi.getDanhSach(DangCauHoi.MULTIPLE_CHOICE);
-        List<PhuongAn> a = new ArrayList<>();
-        l.forEach(q -> a.add(q.thucHien().get(0)));
-        for (int i = 0; i < l.size(); i++)
-            l.get(i).hienKetQua(a.get(i));
+//        List<CauHoi> l = QuanLyCauHoi.getDanhSach(DangCauHoi.CONVERSATION);
+        //List<PhuongAn> cauTraLoi = new ArrayList<>();
+//        l.forEach(q -> q.hienThi());
+        //for (int i = 0; i < l.size(); i++)
+          //  l.get(i).hienKetQua(cauTraLoi.get(i));
+          
+          try (Scanner sc = Config.readFile("questions/conversation.txt")) {
+			while (sc.hasNextLine()) {
+//				CauHoi cauHoi = new Conversation();
+//				cauHoi.docFile(sc);
+//                                cauHoi.hienThi();
+                        System.out.println(sc.nextLine());
+			}
+                sc.close();
+		} catch (FileNotFoundException e) {
+
     }
+}
 }

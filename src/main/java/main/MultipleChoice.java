@@ -28,8 +28,8 @@ public class MultipleChoice extends CauHoi {
         System.out.println(this.getNoiDung());
 
         // Hiển thị từng phương án
-        for(int i = 0; i < this.phuongAn.size(); i++)
-            System.out.printf("%s. %s\n", (char)(i + 65), phuongAn.get(i).getNoiDung());
+        for(int i = 0; i < this.getPhuongAn().size(); i++)
+            System.out.printf("%s. %s\n", (char)(i + 65), getPhuongAn().get(i).getNoiDung());
     }
 
     @Override
@@ -40,10 +40,10 @@ public class MultipleChoice extends CauHoi {
             System.out.print("Lua chon dap an cua ban: ");
             char ans = Config.sc.next().charAt(0);
             index = (int)ans - 65;
-            if(index < 0 || index >= this.phuongAn.size())
+            if(index < 0 || index >= this.getPhuongAn().size())
                 System.out.println("Loi! vui long nhap lai (A,B,C,D,E...)");
-        } while(index < 0 || index >= this.phuongAn.size());
-        cauTraLoi.add(this.phuongAn.get(index));
+        } while(index < 0 || index >= this.getPhuongAn().size());
+        cauTraLoi.add(this.getPhuongAn().get(index));
     }
 
     @Override
@@ -59,10 +59,10 @@ public class MultipleChoice extends CauHoi {
         this.setDangCauHoi(info[2]);
         this.setDanhMuc(info[3]);
         this.setNoiDung(question);
-        Arrays.asList(listAnswers).forEach(ans -> this.phuongAn.add(new PhuongAn(ans, answersInfo[1])));
-        for (var opt : this.phuongAn)
+        Arrays.asList(listAnswers).forEach(ans -> this.getPhuongAn().add(new PhuongAn(ans, answersInfo[1])));
+        for (var opt : this.getPhuongAn())
             if (opt.getNoiDung().equals(answersInfo[0])) {
-                this.phuongAnDung = opt;
+                this.setPhuongAnDung(opt);
                 break;
             }
     }
@@ -71,11 +71,31 @@ public class MultipleChoice extends CauHoi {
     public void hienKetQua(PhuongAn... ans) {
         this.hienThi();
         PhuongAn traLoi = ans[0];
-        System.out.printf(
-            "Đáp án của bạn: %s\t\t|| %s ||\nGiải thích: %s\n\n",
+        System.out.printf("Đáp án của bạn: %s\t\t|| %s ||\nGiải thích: %s\n\n",
             traLoi.getNoiDung(),
-            traLoi == this.phuongAnDung ? "Đúng" : "Sai",
+            traLoi == this.getPhuongAnDung() ? "Đúng" : "Sai",
             traLoi.getGiaiThich()
         );
+    }
+
+    /**
+     * @return the phuongAn
+     */
+    public List<PhuongAn> getPhuongAn() {
+        return phuongAn;
+    }
+
+    /**
+     * @param phuongAn the phuongAn to set
+     */
+    public void setPhuongAn(List<PhuongAn> phuongAn) {
+        this.phuongAn = phuongAn;
+    }
+
+    /**
+     * @param phuongAnDung the phuongAnDung to set
+     */
+    public void setPhuongAnDung(PhuongAn phuongAnDung) {
+        this.phuongAnDung = phuongAnDung;
     }
 }
