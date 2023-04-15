@@ -1,2 +1,3 @@
-1,quythanh,1,Thanh,TPHCM,1,22/5/2003,13/4/2023,1
-2,phatpanda,1,Phat,Nha Trang,1,8/11/2003,13/4/2023,1
+Thanh,QuyThanh,ADMIN,TPHCM,true,22/05/2003,13/4/2023,true
+Phat,PhatPanda,ADMIN,Nha Trang,true,08/11/2003,13/04/2023,true
+Nhi,yNhi,1234,Ha Tinh,false,19/05/2003,14/04/2023,false
