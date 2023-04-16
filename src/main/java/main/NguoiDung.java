@@ -39,7 +39,7 @@ public class NguoiDung {
         this.baiLuyenTap = new ArrayList<>();
 
         try (Scanner sc = Config.readFile("users/exercises.txt")) {
-            while (sc.hasNextLine()) {
+            while (sc.hasNext()) {
                 String[] info = sc.nextLine().split(",");
                 String[] listId = sc.nextLine().split(",");
                 sc.nextLine();
@@ -49,6 +49,7 @@ public class NguoiDung {
                     new LuyenTap(this, DangCauHoi.valueOf(info[1]), Double.parseDouble(info[2]), Config.toCalendar(info[3]), Arrays.asList(listId))
                 );
             }
+            sc.close();
         } catch (FileNotFoundException e) {
 
         } catch (ParseException e1) {
