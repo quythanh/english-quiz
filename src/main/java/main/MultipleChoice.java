@@ -21,7 +21,10 @@ public class MultipleChoice extends CauHoi {
         this.phuongAnDung = phuongAnDung;
 	}
 
+    public List<PhuongAn> getPhuongAn() { return phuongAn; }
+    public void setPhuongAn(List<PhuongAn> phuongAn) { this.phuongAn = phuongAn; }
     public PhuongAn getPhuongAnDung() { return this.phuongAnDung; }
+    public void setPhuongAnDung(PhuongAn phuongAnDung) { this.phuongAnDung = phuongAnDung; }
 
     @Override
     public void hienThi() {
@@ -80,8 +83,4 @@ public class MultipleChoice extends CauHoi {
         );
         return kq ? 1 : 0;
     }
-
-    public List<PhuongAn> getPhuongAn() { return phuongAn; }
-    public void setPhuongAn(List<PhuongAn> phuongAn) { this.phuongAn = phuongAn; }
-    public void setPhuongAnDung(PhuongAn phuongAnDung) { this.phuongAnDung = phuongAnDung; }
 }

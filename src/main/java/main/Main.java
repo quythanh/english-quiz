@@ -23,11 +23,11 @@ public class Main {
                 switch (choice) {
                     case 1:
                         System.out.println("DANG NHAP");
-                        me = QuanLyNguoiDung.dangNhap();
+                        me = dangNhap();
                         break;
                     case 2:
                         System.out.println("DANG KI");
-                        me = QuanLyNguoiDung.dangKi();
+                        me = dangKi();
                         break;
                     case 3:
                         System.out.println("HEN GAP LAI!!");
@@ -70,7 +70,9 @@ public class Main {
                                         break;
                                     case 6:
                                         System.out.println("THEM HOC VIEN");
-                                        QuanLyNguoiDung.them();
+                                        NguoiDung newUser = new NguoiDung();
+                                        newUser.dangKi();
+                                        QuanLyNguoiDung.them(newUser);
                                         break;
                                     case 7:
                                         System.out.println("XOA HOC VIEN");
@@ -186,5 +188,30 @@ public class Main {
     public static void pause() {
         System.out.println("Nhan ENTER de tiep tuc...");
         Config.sc.nextLine();
+    }
+
+    public static NguoiDung dangNhap() {
+        System.out.print("Nhap username: ");
+        String name = Config.sc.nextLine();
+        System.out.print("Nhap mat khau: ");
+        String pass = Config.sc.nextLine();
+        List<NguoiDung> danhSach = QuanLyNguoiDung.getDanhSach();
+
+        for(int i =0; i<danhSach.size(); i++) {
+            if(danhSach.get(i).getUsername().equals(name) && danhSach.get(i).getPassword().equals(pass)){
+                Config.dangNhap = true;
+                return danhSach.get(i);
+            }
+        }
+        System.out.println("Ten nguoi dung khong ton tai hoac mat khau khong dung!");
+        return null;
+    }
+
+    public static NguoiDung dangKi() throws ParseException, FileNotFoundException {
+        NguoiDung dk = new NguoiDung();
+        dk.dangKi();
+        QuanLyNguoiDung.them(dk);
+        Config.dangNhap = true;
+        return dk;
     }
 }

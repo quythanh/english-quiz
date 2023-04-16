@@ -30,18 +30,11 @@ public class QuanLyNguoiDung {
         } catch (ParseException ex) {
             Logger.getLogger(QuanLyNguoiDung.class.getName()).log(Level.SEVERE, null, ex);
         }
-//
-//       try (Scanner sc = Config.readFile("users/exercises.txt")) {
-//           while (sc.hasNext()) {
-//               String[] info = sc.nextLine().split(",");
-//               String[] id = sc.nextLine().split(",");
-//               sc.nextLine();
-//               LuyenTap lt = new LuyenTap()
-//           }
-//       } catch (FileNotFoundException e) {
-//           e.printStackTrace();
-//       }
     }
+
+    private QuanLyNguoiDung() {}
+    
+    public static List<NguoiDung> getDanhSach() { return danhSach; }
 
     public static void hienThi() {
         System.out.println(" _________________________________________________________________________________");
@@ -50,31 +43,6 @@ public class QuanLyNguoiDung {
         System.out.println("|____|_____________|______|_____________|_____________|_______________|___________|");
     }
 
-    public static NguoiDung dangNhap() {
-        System.out.print("Nhap username: ");
-        String name = Config.sc.nextLine();
-        System.out.print("Nhap mat khau: ");
-        String pass = Config.sc.nextLine();
-        for(int i =0; i<danhSach.size(); i++) {
-            if(danhSach.get(i).getUsername().equals(name) && danhSach.get(i).getPassword().equals(pass)){
-                Config.dangNhap = true;
-                return danhSach.get(i);
-            }
-        }
-        System.out.println("Ten nguoi dung khong ton tai hoac mat khau khong dung!");
-        return null;
-    }
-
-    public static List<NguoiDung> getDanhSach() { return danhSach; }
-
-    public static NguoiDung dangKi() throws ParseException, FileNotFoundException {
-        NguoiDung dk = new NguoiDung();
-        dk.dangKi();
-        QuanLyNguoiDung.danhSach.add(dk);
-        Config.dangNhap = true;
-        ghiSinhVien();
-        return dk;
-    }
     public static List<NguoiDung> traCuu(String hoTen) {
         return danhSach.stream()
         .filter(nguoiDung -> nguoiDung.getHoTen().contains(hoTen))
@@ -99,12 +67,14 @@ public class QuanLyNguoiDung {
         .collect(Collectors.toList());
     }
 
-    public static void them() throws ParseException, FileNotFoundException {
-        NguoiDung moi = QuanLyNguoiDung.dangKi();
+    public static void them(NguoiDung nguoiDung) throws ParseException, FileNotFoundException {
+        danhSach.add(nguoiDung);
+        capNhatDanhSachNguoiDung();
     }
 
-    public static void xoa(int id) {
+    public static void xoa(int id) throws FileNotFoundException {
         QuanLyNguoiDung.danhSach.removeIf(x -> x.getId() == id);
+        capNhatDanhSachNguoiDung();
     }
 
     public static void capNhat(int id) throws ParseException, FileNotFoundException {
@@ -117,10 +87,10 @@ public class QuanLyNguoiDung {
             x.capNhat();
             break;
         }
-        ghiSinhVien();
+        capNhatDanhSachNguoiDung();
     }
 
-    private static void ghiSinhVien() throws FileNotFoundException {
+    private static void capNhatDanhSachNguoiDung() throws FileNotFoundException {
         PrintWriter w = Config.writeFile("users/accounts.txt");
         danhSach.forEach(u -> w.format(
             "%s,%s,%s,%s,%s,%s,%s,%s\n",

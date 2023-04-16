@@ -36,6 +36,7 @@ public abstract class CauHoi {
     public DangCauHoi getDangCauHoi() { return this.dangCauHoi; }
     public void setDangCauHoi(DangCauHoi dangCauHoi) { this.dangCauHoi = dangCauHoi; }
     public void setDangCauHoi(String dangCauHoi) { this.dangCauHoi = DangCauHoi.valueOf(dangCauHoi); }
+    public PhuongAn getPhuongAnDung() { return null; }
 
     @Override
     public boolean equals(Object object) {
@@ -48,8 +49,6 @@ public abstract class CauHoi {
         hash = 67 * hash + Objects.hashCode(this.id);
         return hash;
     }
-
-    public PhuongAn getPhuongAnDung() { return null; }
 
     public abstract void hienThi();
     public abstract void thucHien(Queue<PhuongAn> cauTraLoi);
