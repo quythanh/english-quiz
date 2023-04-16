@@ -38,7 +38,7 @@ public class QuanLyNguoiDung {
 
     public static void hienThi() {
         System.out.println(" _________________________________________________________________________________________");
-        System.out.println("| ID |         TEN         |  GT  |   DIA CHI   |  NGAY SINH  | NGAY GIA NHAP |  VAI TRO  |");
+        System.out.println("| ID |         TÊN         |  GT  |   ĐỊA CHỈ   |  NGÀY SINH  | NGÀY GIA NHẬP |  VAI TRÒ  |");
         danhSach.forEach(x -> x.hienThi());
         System.out.println("|____|_____________________|______|_____________|_____________|_______________|___________|");
     }
@@ -81,7 +81,7 @@ public class QuanLyNguoiDung {
         for(NguoiDung x : QuanLyNguoiDung.danhSach)
         if(x.getId() == id) {
             System.out.println(" _________________________________________________________________________________________");
-            System.out.println("| ID |         TEN         |  GT  |   DIA CHI   |  NGAY SINH  | NGAY GIA NHAP |  VAI TRO  |");
+            System.out.println("| ID |         TÊN         |  GT  |   ĐỊA CHỈ   |  NGÀY SINH  | NGÀY GIA NHẬP |  VAI TRÒ  |");
             x.hienThi();
             System.out.println("|____|_____________________|______|_____________|_____________|_______________|___________|");
             x.capNhat();

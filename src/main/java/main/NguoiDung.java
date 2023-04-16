@@ -58,20 +58,20 @@ public class NguoiDung {
     }
 
     public void hienThi(){
-        String role = this.isAdmin() ? "ADMIN" : "HOC VIEN";
+        String role = this.isAdmin() ? "ADMIN" : "HỌC VIÊN";
         String birth = Config.formatter.format(this.getNgaySinh().getTime());
         String join = Config.formatter.format(this.getNgayGiaNhap().getTime());
         System.out.println("|____|_____________________|______|_____________|_____________|_______________|___________|");
         System.out.println("|    |                     |      |             |             |               |           |");
-        System.out.printf("| %2d | %19s | %4s | %11s | %11s | %13s | %9s |\n", this.getId(), this.hoTen, this.gioiTinh ? "Nam" : "Nu", this.getQueQuan(), birth, join, role);
+        System.out.printf("| %2d | %19s | %4s | %11s | %11s | %13s | %9s |\n", this.getId(), this.hoTen, this.gioiTinh ? "Nam" : "Nữ", this.getQueQuan(), birth, join, role);
     }
 
     private void nhap() throws ParseException {
         System.out.print("(-) Họ và tên: ");
         this.hoTen = Config.sc.nextLine();
-        System.out.print("(-) Gioi Tinh: ");
+        System.out.print("(-) Giới Tính: ");
         this.gioiTinh = Config.sc.nextLine().toUpperCase().equals("NAM");
-        System.out.print("(-) Que Quan: ");
+        System.out.print("(-) Quê Quán: ");
         this.queQuan = Config.sc.nextLine();
         System.out.print("(-) Ngày sinh: ");
         this.ngaySinh=Config.toCalendar(Config.sc.nextLine());
@@ -101,7 +101,7 @@ public class NguoiDung {
 
     public void capNhat() throws ParseException {
         this.nhap();
-        System.out.print("(-) Ngày giá nhập: ");
+        System.out.print("(-) Ngày gia nhập: ");
         this.ngayGiaNhap = Config.toCalendar(Config.sc.nextLine());
     }
 
@@ -190,4 +190,3 @@ public class NguoiDung {
         return admin;
     }
 }
-

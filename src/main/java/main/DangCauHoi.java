@@ -8,7 +8,7 @@ public enum DangCauHoi {
 	MULTIPLE_CHOICE(1, "Multiple choice") {
         @Override
         public int getSoLuong() {
-            System.out.println("Nhâp số lượng câu: ");
+            System.out.println("Nhập số lượng câu: ");
             return Integer.parseInt(Config.sc.nextLine());
         }
 

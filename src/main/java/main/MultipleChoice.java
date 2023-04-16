@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Arrays;
 import java.util.ArrayList;
-import java.util.stream.Collectors;
 import java.util.Queue;
 
 public class MultipleChoice extends CauHoi {
@@ -36,11 +35,11 @@ public class MultipleChoice extends CauHoi {
         int index;
         this.hienThi();
         do {
-            System.out.print("Lua chon dap an cua ban: ");
+            System.out.print("Lựa chọn đáp án của bạn: ");
             char ans = Config.sc.nextLine().charAt(0);
             index = (int)ans - 65;
             if(index < 0 || index >= this.getPhuongAn().size())
-                System.out.println("Loi! vui long nhap lai (A,B,C,D,...)");
+                System.out.println("Lỗi! Vui lòng nhập lai (A,B,C,D,...)");
         } while(index < 0 || index >= this.getPhuongAn().size());
         cauTraLoi.add(this.getPhuongAn().get(index));
     }
