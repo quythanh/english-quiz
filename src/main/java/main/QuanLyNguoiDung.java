@@ -37,10 +37,10 @@ public class QuanLyNguoiDung {
     public static List<NguoiDung> getDanhSach() { return danhSach; }
 
     public static void hienThi() {
-        System.out.println(" _________________________________________________________________________________");
-        System.out.println("| ID |     TEN     |  GT  |   DIA CHI   |  NGAY SINH  | NGAY GIA NHAP |  VAI TRO  |");
+        System.out.println(" _________________________________________________________________________________________");
+        System.out.println("| ID |         TEN         |  GT  |   DIA CHI   |  NGAY SINH  | NGAY GIA NHAP |  VAI TRO  |");
         danhSach.forEach(x -> x.hienThi());
-        System.out.println("|____|_____________|______|_____________|_____________|_______________|___________|");
+        System.out.println("|____|_____________________|______|_____________|_____________|_______________|___________|");
     }
 
     public static List<NguoiDung> traCuu(String hoTen) {
@@ -80,10 +80,10 @@ public class QuanLyNguoiDung {
     public static void capNhat(int id) throws ParseException, FileNotFoundException {
         for(NguoiDung x : QuanLyNguoiDung.danhSach)
         if(x.getId() == id) {
-            System.out.println(" _________________________________________________________________________________");
-            System.out.println("| ID |     TEN     |  GT  |   DIA CHI   |  NGAY SINH  | NGAY GIA NHAP |  VAI TRO  |");
+            System.out.println(" _________________________________________________________________________________________");
+            System.out.println("| ID |         TEN         |  GT  |   DIA CHI   |  NGAY SINH  | NGAY GIA NHAP |  VAI TRO  |");
             x.hienThi();
-            System.out.println("|____|_____________|______|_____________|_____________|_______________|___________|");
+            System.out.println("|____|_____________________|______|_____________|_____________|_______________|___________|");
             x.capNhat();
             break;
         }

@@ -60,9 +60,9 @@ public class NguoiDung {
         String role = this.isAdmin() ? "ADMIN" : "HOC VIEN";
         String birth = Config.formatter.format(this.getNgaySinh().getTime());
         String join = Config.formatter.format(this.getNgayGiaNhap().getTime());
-        System.out.println("|____|_____________|______|_____________|_____________|_______________|___________|");
-        System.out.println("|    |             |      |             |             |               |           |");
-        System.out.printf("| %2d | %11s | %4s | %11s | %11s | %13s | %9s |\n", this.getId(), this.hoTen, this.gioiTinh ? "Nam" : "Nu", this.getQueQuan(), birth, join, role);
+        System.out.println("|____|_____________________|______|_____________|_____________|_______________|___________|");
+        System.out.println("|    |                     |      |             |             |               |           |");
+        System.out.printf("| %2d | %19s | %4s | %11s | %11s | %13s | %9s |\n", this.getId(), this.hoTen, this.gioiTinh ? "Nam" : "Nu", this.getQueQuan(), birth, join, role);
     }
 
     private void nhap() throws ParseException {

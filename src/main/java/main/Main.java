@@ -174,10 +174,10 @@ public class Main {
     }
 
     public static void XuatDSND(List<NguoiDung> DS) {
-        System.out.println(" _________________________________________________________________________________");
-        System.out.println("| ID |     TEN     |  GT  |   DIA CHI   |  NGAY SINH  | NGAY GIA NHAP |  VAI TRO  |");
+        System.out.println(" _________________________________________________________________________________________");
+        System.out.println("| ID |         TEN         |  GT  |   DIA CHI   |  NGAY SINH  | NGAY GIA NHAP |  VAI TRO  |");
         DS.forEach(x -> x.hienThi());
-        System.out.println("|____|_____________|______|_____________|_____________|_______________|___________|");
+        System.out.println("|____|_____________________|______|_____________|_____________|_______________|___________|");
     }
 
     public static void clearScreen() {  
