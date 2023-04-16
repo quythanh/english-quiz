@@ -10,6 +10,17 @@ public class QuanLyCauHoi {
 	private static List<CauHoi> danhSach = new ArrayList<>();
 
 	static {
+        try (Scanner sc = Config.readFile("questions/multiple_choice.txt")) {
+            while (sc.hasNext()) {
+                CauHoi cauHoi = new MultipleChoice();
+                cauHoi.docFile(sc);
+                danhSach.add(cauHoi);
+            }
+            sc.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
         try (Scanner sc = Config.readFile("questions/conversation.txt")) {
             while (sc.hasNext()) {
                 CauHoi cauHoi = new Conversation();
@@ -21,9 +32,9 @@ public class QuanLyCauHoi {
             e.printStackTrace();
         }
 
-        try (Scanner sc = Config.readFile("questions/multiple_choice.txt")) {
+        try (Scanner sc = Config.readFile("questions/incomplete.txt")) {
             while (sc.hasNext()) {
-                CauHoi cauHoi = new MultipleChoice();
+                CauHoi cauHoi = new Incomplete();
                 cauHoi.docFile(sc);
                 danhSach.add(cauHoi);
             }
@@ -45,6 +56,13 @@ public class QuanLyCauHoi {
 				.filter(cauHoi -> cauHoi.getDangCauHoi() == dangCauHoi)
 				.collect(Collectors.toList());
 	}
+
+    public static void hienThi() {
+        danhSach.forEach(cauHoi -> {
+            System.out.printf("%s. ", cauHoi.getId());
+            cauHoi.hienThi();
+        });
+    }
 
 	public static List<CauHoi> timKiem(String noiDung) {
 		return danhSach.stream()

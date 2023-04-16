@@ -39,7 +39,7 @@ public class MultipleChoice extends CauHoi {
         this.hienThi();
         do {
             System.out.print("Lua chon dap an cua ban: ");
-            char ans = Config.sc.next().charAt(0);
+            char ans = Config.sc.nextLine().charAt(0);
             index = (int)ans - 65;
             if(index < 0 || index >= this.getPhuongAn().size())
                 System.out.println("Loi! vui long nhap lai (A,B,C,D,...)");

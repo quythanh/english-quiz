@@ -55,10 +55,6 @@ public class Conversation extends CauHoi {
         System.out.println(this.getNoiDung());
         for (int i = 0; i < this.cauHoi.size(); i++)
             diem += this.cauHoi.get(i).getKetQua(ans);
-        //this.cauHoi.forEach(q -> {
-        //    int t = q.getKetQua(ans);
-        //    diem += t; 
-        //});
         return diem;
     }
 }

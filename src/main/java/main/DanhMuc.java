@@ -9,7 +9,7 @@ public enum DanhMuc {
 	TINH_TU(2, "Tính từ"),
 	DONG_TU(3, "Động từ"),
 	TRANG_TU(4, "Trạng từ"),
-        DOAN_VAN(5,"Đoạn văn");
+    DOAN_VAN(5,"Đoạn văn");
 
 	private int id;
 	private String name;
