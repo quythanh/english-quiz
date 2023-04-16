@@ -15,11 +15,6 @@ public class MultipleChoice extends CauHoi {
         this.phuongAn = new ArrayList<>();
     }
 
-	public MultipleChoice(String noiDung, List<PhuongAn> phuongAn, PhuongAn phuongAnDung) {
-        super("1", noiDung, "DANH_TU", 1, "MULTIPLE_CHOICE");
-        this.phuongAn = phuongAn;
-        this.phuongAnDung = phuongAnDung;
-	}
 
     public List<PhuongAn> getPhuongAn() { return phuongAn; }
     public void setPhuongAn(List<PhuongAn> phuongAn) { this.phuongAn = phuongAn; }
