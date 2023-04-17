@@ -27,11 +27,7 @@ public class LuyenTap {
         for (LuyenTap lt : nguoiDung.getBaiLuyenTap())
             if (lt.getDangCauHoi() == dangCauHoi)
                 IdCauHoiDaLam.addAll(lt.getDanhSachIdCauHoi());
-        List<CauHoi> cauHoi;
-        if (this.dangCauHoi == DangCauHoi.MULTIPLE_CHOICE)
-            cauHoi = danhSach.stream().filter(q -> !IdCauHoiDaLam.contains(q.getId())).collect(Collectors.toList());
-        else
-            cauHoi = danhSach;
+        List<CauHoi> cauHoi = danhSach.stream().filter(q -> !IdCauHoiDaLam.contains(q.getId())).collect(Collectors.toList());
 
         int s = dangCauHoi.getSoLuong();
         MucDo md = this.dangCauHoi.getMucDo();
