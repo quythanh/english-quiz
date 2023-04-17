@@ -19,7 +19,47 @@ do#did#done#doing
 did#The correct verb form is "did".
 ==========
 m005,KHO,MULTIPLE_CHOICE,TINH_TU
+The opposition will be elected into government at the next election, without a ________ of a doubt.
+shade#shadow#benefit#hue
+shadow# shadow of a doubt = sự nghi ngờ
+=========
+m006,DE,MULTIPLE_CHOICE,DONG_TU
+Choose the correct form of verb: "I ______ a car next year
+buy#bought#going to buy#was buying
+going to buy#It's the future tense in this question
+=========
+m007,TRUNG_BINH,MULTIPLE_CHOICE,DONG_TU
+GCSE are not "compulsory", but they are the most common qualifications taken by students.WHAT IS THE SYMNONYM?
+required#applied#fulfilled#specialized
+required#compulsory = required
+=========
+m008,TRUNG_BINH,MULTIPLE_CHOICE,DONG_TU
+When being interviewed, you should "concentrate on" what the interviewer is saying or asking you.WHAT IS THE SYMNONYM?
+relate on#be interested in#impress on# pay attention to
+pay attention to#concentrate on sth = pay attention to sth
+=========
+m009,KHO,MULTIPLE_CHOICE,DONG_TU
+My plans to travel around the world have _________ through because I couldn‟t save enough money.
+fallen#dropped#given#put
+fallen# fallen through = fail; put through = connect to sb (a phone call)
+=========
+m010,DE,MULTIPLE_CHOICE,TINH_TU
 Choose the correct form of the adjective to complete the sentence: "The _____ movie I've ever seen is 'Gone with the Wind'."
 good#better#best#none of the above
 best#The correct form of the adjective is "best".
+=========
+m011,KHO,MULTIPLE_CHOICE,TRANG_TU
+Remember to appreciate what your friends do for you. You shouldn’t take them ________.
+as a rule#as usual#out of habit#for granted
+for granted#take sb for granted: xem là điều hiển nhiên
+=========
+m012,TRUNG_BINH,MULTIPLE_CHOICE,TRANG_TU
+“ Don’t stay anywhere near the railway station at night. It’s dangerous.” - “_____________.”
+OK. That will do#They won't like it, I bet#I definitely won't. Thank you#Where on Earth have you been?
+I definitely won’t. Thank you.#Tôi sẽ không làm như thế, cảm ơn bạn
+=========
+m013,KHO,MULTIPLE_CHOICE,DONG_TU
+Although he is my friend, I find it hard to _______ his selfishness
+put up with#catch up with#keep up with#come down with
+put up with#put up with: chịu đựng
 =========

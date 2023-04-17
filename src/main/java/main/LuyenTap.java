@@ -30,6 +30,7 @@ public class LuyenTap {
         List<CauHoi> cauHoi = danhSach.stream().filter(q -> !IdCauHoiDaLam.contains(q.getId())).collect(Collectors.toList());
 
         int s = dangCauHoi.getSoLuong();
+        MucDo md = this.dangCauHoi.getMucDo();
         for (int i = 0; i < s; i++) {
             CauHoi q = cauHoi.get(i);
             danhSachIdCauHoi.add(q.getId());

@@ -47,7 +47,7 @@ public enum DangCauHoi {
     }
 
     public MucDo getMucDo() {
-        Arrays.asList(DangCauHoi.values()).forEach(dch -> System.out.println(dch));
+        Arrays.asList(MucDo.values()).forEach(dch -> System.out.println(dch));
         System.out.println("Chọn mức độ câu hỏi:\t");
         int choice = Integer.parseInt(Config.sc.nextLine());
         return MucDo.valueOf(choice);

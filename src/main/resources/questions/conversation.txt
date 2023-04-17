@@ -1,4 +1,4 @@
-c001,DE,CONVERSATION,DOAN_VAN
+c001,KHO,CONVERSATION,DOAN_VAN
 Fifty-five delegates representing all thirteen states except Rhode Island attended the Constitutional Convention in Philadelphia from May to September 1787. The delegates had been instructed by the Continential Congress to revise the old Articles off Confederation, but most believed that a strong central government was needed. There were differences, however, about what structure the government should take and how much influence large states should have. 
 Virginia was by far the most populous state, wtih twice as many as people as New York, four times as many as New Jersey and ten times as many as Delaware. The leader of the Virginia delegation, James Madison, had already drawn up a plan for government, which become known as the Large State Plan. It is essence was that congressional representation would be based on population. It provided for two or more national executives. The smaller states feared that under this plan, a few large states would lord over the rest. New Jersey countered with the Small State Plan. It provided for equal representation for all states in a national legistature and for a singer national executive. Angry debate, heightened by a stifling heat wave, lead to deadlock. 
 A cooling of tempers seemed to come with lower temperatures. The delegates harmmered out an agreement known as the Great Compromise - actually a bundle of shrewd compromises. They decided that Congress would consist of two houses. The larger states were granted representation based on population in the lower house, the House of Representatives. The smaller states were given equal representation in the upper house, the Senate, in which each state would have two senators regardless of population. It was also agreed that there would be a singer executive, the president. This critical compromise broke the logjam, and from then on, success seemed within reach. 
@@ -26,5 +26,69 @@ c001m04,TRUNG_BINH,MULTIPLE_CHOICE,DONG_TU
 Which of the following is NOT GIVEN in the passage as one of the provisions of the Great Compromise?
 There would be only one national executive# The president would be elected by popular vote#Each state would have two senators#Congress would be divided into two bodies
 The president would be elected by popular vote#"The delegates harmmered out an agreement known as the Great Compromise - actually a bundle of shrewd compromises. They decided that Congress would consist of two houses. The larger states were granted representation based on population in the lower house, the House of Representatives. The smaller states were given equal representation in the upper house, the Senate, in which each state would have two senators regardless of population. It was also agreed that there would be a singer executive, the president."
+==========
+##########
+c002,TRUNG_BINH,CONVERSATION,DOAN_VAN
+William Sydney Porter (1862-1910), who wrote under the pseudonym of O. Henry, was born in North Carolina. His only formal education was to attend his Aunt Lina’s school until the age of fifteen, where he developed his lifelong love of books. By 1881 he was a licensed pharmacist. However, within a year, on the recommendation of a medical colleague of his Father’s, Porter moved to La Salle County in Texas for two years herding sheep. During this time, Webster’s Unabridged Dictionary was his constant companion, and Porter gained a knowledge of ranch life that he later incorporated into many of his short stories. He then moved to Austin for three years, and during this time the first recorded use of his pseudonym appeared, allegedly derived from his habit of calling “Oh, Henry” to a family cat. In 1887, Porter married Athol Estes. He worked as a draftsman, then as a bank teller for the First National Bank.
+In 1894 Porter founded his own humor weekly, the “Rolling Stone”, a venture that failed within a year, and later wrote a column for the Houston Daily Post. In the meantime, the First National Bank was examined, and the subsequent indictment of 1886 stated that Porter had embezzled funds. Porter then fled to New Orleans, and later to Honduras, leaving his wife and child in Austin. He returned in 1897 because of his wife’s continued ill-health, however she died six months later. Then, in 1898 Porter was found guilty and sentenced to five years imprisonment in Ohio. At the age of thirty five, he entered prison as a defeated man; he had lost his job, his home, his wife, and finally his freedom. He emerged from prison three years later, reborn as O. Henry, the pseudonym he now used to hide his true identity. He wrote at least twelve stories in jail, and after re-gaining his freedom, went to New York City, where he published more than 300 stories and gained fame as America’s favorite short Story writer. Porter married again in 1907, but after months of poor health, he died in New York City at the age of forty-eight in 1910. O. Henry’s stories have been translated all over the world.
+#
+
+c002m01,DE,MULTIPLE_CHOICE,DOAN_VAN
+According to the passage, Porter’s Father was ___________.
+the person who gave him a life-long love of books#a medical doctor#a licensed pharmacist#responsible for his move to La Salle County in Texas
+a medical doctor#"However, within a year, on the recommendation of a medical colleague of his Father’s, Porter moved to La Salle County in Texas for two years herding sheep."
+==========
+
+c002m02,DE,MULTIPLE_CHOICE,DOAN_VAN
+Why did the author write the passage?
+to outline the career of a famous American#because of his fame as America’s favorite short story writer#because it is a tragic story of a gifted writer#to outline the influences on O. Henry’s writing
+to outline the career of a famous American#Đoạn văn nêu lên các mốc thời gian trong sự nghiệp của O.Henry
+==========
+
+c002m03,TRUNG_BINH,MULTIPLE_CHOICE,DOAN_VAN
+What is the passage primarily about?
+The life and career of William Sydney Porter.#The way to adopt a nickname.#O.Henry’s influence on American literature.#The adventures of O.Henry.
+The life and career of William Sydney Porter.#Đoạn văn nêu lên các mốc thời gian trong cuộc đời và sự nghiệp của William Sydney Porter.
+==========
+
+c002m04,TRUNG_BINH,MULTIPLE_CHOICE,DOAN_VAN
+The word “pseudonym” in the passage refers to ___________.
+William Sydney Porter#O. Henry#Athol Estes#the Aunt Lina
+O. Henry#William Sydney Porter (1862-1910), who wrote under the pseudonym of O. Henry, was born in North Carolina.
+==========
+##########
+c003,DE,CONVERSATION,DOAN_VAN
+The White House, the official home of the United States president, was not built in time for George Washington to live in it. It was begun in 1792 and was ready for its first inhabitants. President and Mrs.John Adams, who moved in on November 1, 1800. When the Adamses moved in, the White House was not yet complete, and the Adamses suffered many inconveniences; for example, the main staircase was incomplete, which hindered movement from floor to floor, and the future laundry yard was merely a pool of mud, so wet laundry was hung in the unfinished East Room to dry. Thomas Jefferson, the third president, improved the comfort of the White House in many respects and added new architectural features such as the terraces on the east and west ends.
+When the British forces burned the White House on August 24, 1814, President Madison was forced to leave.All the remained after the fire was the exterior walls, the interior was completely destroyed. It was not until December of 1817 that the following president, James Monroe, was able to move into a rebuilt residence. Since then, the White House has continued to be modified but has been continuously occupied by each succeeding U.S president.
+#
+
+c003m01,DE,MULTIPLE_CHOICE,DOAN_VAN
+Which of the following would be the most appropriate title for this text?
+George Washington’s life in the White House.#The Early History of the White House.#The burning of the White House#Presidential Policies of Early U.S.Presidents.
+The Early History of the White House.#Câu này chúng ta nên để làm cuối cùng sau khi giải quyết hết các câu hỏi còn lại để có cái nhìn tổng quát về toàn bài mà chọn đáp án nhé.
+==========
+
+c003m02,DE,MULTIPLE_CHOICE,DOAN_VAN
+Why did George Washington not live in the White House?
+It had been burned by the British.#He did not like the architectural features.#He did not want to suffer the inconveniences that the Adamses had suffered.#Construction had not yet been completed.
+Construction had not yet been completed.#“The White House, the official home of the United States president, was not built in time for George Washington to live in it.”
+==========
+
+c003m03,TRUNG_BINH,MULTIPLE_CHOICE,DOAN_VAN
+The word “inhabitants” in line 2 is closest meaning to:
+modifications#moves#celebrations#residents
+residents#Inhabitants = residents (n) các cư dân
+==========
+
+c003m04,TRUNG_BINH,MULTIPLE_CHOICE,DOAN_VAN
+It can be inferred from the passage that John Adams was:
+the first president of the United States.#the second president of the United States.#the third president of the United States.#the fourth president of the United States.
+the second president of the United States.#Ta thấy hết George Washington là đến John Adams là tổng thống tiếp theo.
+==========
+
+c003m05,TRUNG_BINH,MULTIPLE_CHOICE,DOAN_VAN
+According to the passage, when James Monroe came to the White House, it had been
+repressed#reconstructed#relocated#reserved
+reconstructed#“James Monroe, was able to move into a rebuilt residence.”
 ==========
 ##########
